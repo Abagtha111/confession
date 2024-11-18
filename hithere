@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click to Read the Message</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #ff5e57;
+            margin-bottom: 15px;
+        }
+
+        .letter {
+            display: none;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+            margin-top: 20px;
+        }
+
+        .signature {
+            margin-top: 30px;
+            font-style: italic;
+            font-size: 18px;
+        }
+
+        .button {
+            background-color: #ff5e57;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #ff3e2d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hey there!</h1>
+        <button class="button" onclick="showLetter()">Click to Read the Message</button>
+
+        <div class="letter" id="letter">
+            <p>I'm not sure if this is a bit unexpected, but I just wanted to say that I've noticed you, and I think you're really cool. I don't know you personally, but there's something about you that stands out in a good way.</p>
+            <p>This isn't meant to be anything weird, just a simple message from someone who thinks you're awesome. I hope you're having a great day, and maybe we'll cross paths someday!</p>
+            <p class="signature">From a Stranger</p>
+        </div>
+    </div>
+
+    <script>
+        function showLetter() {
+            document.getElementById("letter").style.display = "block";
+        }
+    </script>
+</body>
+</html>
